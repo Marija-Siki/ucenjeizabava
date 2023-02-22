@@ -18,7 +18,7 @@
   text-decoration: none;
   color: #fff;
   text-shadow: 0 0 7px #fff;
- 
+
 }
 
 .games-list li {
@@ -47,14 +47,15 @@
 
 .games-pics {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.games-pics img{
+.games-pics img {
   max-width: 35rem;
   height: 35rem;
 }
+
 /* 
 .games-pics div:first-of-type { 
   margin-top: -80rem;
@@ -71,7 +72,7 @@
   margin-top: -40rem;
   margin-right: 15rem;
 
-  
+
 }
 
 .cube3 {
@@ -91,9 +92,9 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) { 
+@media screen and (max-width: 900px) {
 
-  .games-pics img{
+  .games-pics img {
     max-width: 25rem;
     height: 25rem;
   }
@@ -122,5 +123,5 @@
     display: none;
   }
 
-  
+
 }

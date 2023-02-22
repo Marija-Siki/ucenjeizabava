@@ -17,7 +17,6 @@ body {
   margin: auto;
   overflow: hidden;
   background-color: #fff;
-  /* margin-top: 100px; */
 }
 
 #block {
@@ -43,6 +42,7 @@ body {
   0% {
     left: 400px;
   }
+
   100% {
     left: -50px;
   }
@@ -68,6 +68,3 @@ body {
   animation: block 2s infinite linear;
   animation-delay: -1s;
 }
-
-
-

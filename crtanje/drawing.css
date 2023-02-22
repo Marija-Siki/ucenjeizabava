@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,10 @@
 
 main {
   text-align: center;
-  /* height: 100vh; */
+}
+
+#drawing-note {
+  display: none;
 }
 
 canvas {
@@ -27,10 +29,12 @@ canvas {
   margin: 0 auto;
   margin-bottom: 20rem;
 }
+
 #color {
   border-radius: 50%;
 }
-.toolbox > * {
+
+.toolbox>* {
   background-color: #fff;
   border: none;
   border-radius: 50%;
@@ -48,7 +52,7 @@ canvas {
   color: #3f40cc;
 }
 
-.toolbox > *:last-child {
+.toolbox>*:last-child {
   margin-left: auto;
 }
 
@@ -126,7 +130,19 @@ button img {
 MEDIA
 ******/
 
+@media screen and (max-width: 1280px) {
+  #drawing-note {
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: none;
+    padding: 0 4rem 5rem 4rem;
+    font-weight: 600;
+  }
+}
+
 @media screen and (max-width: 1140px) {
+
   .drawing-img1,
   .drawing-img2,
   .drawing-img3 {
@@ -165,6 +181,7 @@ MEDIA
     height: 100%;
     margin-bottom: 3rem;
   }
+
   #second-section p {
     margin-bottom: 3rem;
   }
@@ -181,6 +198,7 @@ MEDIA
 }
 
 @media screen and (max-width: 900px) {
+
   .copy {
     margin-top: 25rem;
   }

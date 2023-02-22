@@ -5,7 +5,7 @@
   color: #fff;
   text-decoration: 3px wavy;
   text-decoration-color: #e8913d;
-  text-decoration-line:overline underline;
+  text-decoration-line: overline underline;
   text-underline-offset: 2rem;
   font-size: 4rem;
   font-weight: 700;
@@ -17,8 +17,8 @@
 }
 
 .animals-all {
-  max-width:120rem;
-  margin: 0 auto;  
+  max-width: 120rem;
+  margin: 0 auto;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
@@ -51,7 +51,7 @@
   .animals-all {
     display: none;
   }
-  
+
   #animals-allmob {
     display: grid;
     justify-items: center;
@@ -70,4 +70,3 @@
   }
 
 }
-

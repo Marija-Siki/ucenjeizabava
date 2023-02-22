@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:ital@0;1&family=Kanit:ital,wght@0,200;0,300;1,200;1,300&family=Mali:wght@400;700&family=Prompt:ital,wght@0,200;0,300;1,200&family=Rubik+Bubbles&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Mali", cursive;
 }
 
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background-color: #121818;
-  /* background: #343F4F; */
 }
 
 img {
@@ -21,27 +20,26 @@ img {
   margin: 0 0 30px 70px;
 }
 
-.wrapper{
-  /* margin-top: 200px; */
+.wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.wrapper .static-txt{
+.wrapper .static-txt {
   color: #fff;
   font-size: 35px;
   font-weight: 400;
   width: 500px;
 }
 
-.wrapper .dynamic-txts{
+.wrapper .dynamic-txts {
   margin-left: 15px;
   height: 90px;
   line-height: 90px;
   overflow: hidden;
 }
 
-.dynamic-txts li{
+.dynamic-txts li {
   list-style: none;
   color: #e8903dc8;
   text-shadow: 0 0 1px #e8913d, 0 0 4px #e8913d, 0 0 4px #e8913d;
@@ -53,45 +51,47 @@ img {
 }
 
 @keyframes slide {
-  100%{
+  100% {
     top: -360px;
   }
 }
 
-.dynamic-txts li span{
+.dynamic-txts li span {
   position: relative;
   margin: 5px 0;
   line-height: 30px;
 }
 
-.dynamic-txts li span::after{
+.dynamic-txts li span::after {
   content: "";
   position: absolute;
   left: 0;
   height: 120%;
   width: 100%;
-  /* background: #343F4F; */
   background-color: #121818;
   border-left: 2px solid #e8913d;
   animation: typing 3s steps(10) infinite;
 }
 
 @keyframes typing {
-  40%, 60%{
+
+  40%,
+  60% {
     left: calc(100% + 20px);
   }
-  100%{
+
+  100% {
     left: 0;
   }
 }
 
 @media screen and (max-width: 500px) {
 
-body {
-  min-height: 0;
-}
+  body {
+    min-height: 0;
+  }
 
-.wrapper .static-txt{
-  font-size: 55px;
-}
+  .wrapper .static-txt {
+    font-size: 55px;
+  }
 }

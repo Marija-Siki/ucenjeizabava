@@ -10,6 +10,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #3f40cc;
   font-family: "Mali", cursive;
@@ -29,6 +30,7 @@ body {
   cursor: pointer;
   z-index: 1;
 }
+
 #progress-value {
   display: block;
   height: calc(100% - 15px);
@@ -521,6 +523,7 @@ footer h3:before {
   overflow: hidden;
   transition: all 0.5s;
 }
+
 footer h3:before {
   content: "zabava";
   color: #eac81d;
@@ -627,10 +630,12 @@ footer li:hover {
     left: -110%;
     top: 90%;
   }
+
   50% {
     left: 15%;
     top: -30%;
   }
+
   100% {
     top: -10%;
     left: -10%;
@@ -655,7 +660,7 @@ footer span {
 MEDIA
 ***********/
 
-@media screen and (min-width: 2100px) { 
+@media screen and (min-width: 2100px) {
 
   .footer {
     margin-right: 30%;
@@ -768,6 +773,7 @@ MEDIA
   .main-nav-list.active {
     left: 0;
   }
+
   .nav-flex {
     flex-direction: row;
   }
