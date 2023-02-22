@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:ital@0;1&family=Kanit:ital,wght@0,200;0,300;1,200;1,300&family=Mali:wght@400;700&family=Prompt:ital,wght@0,200;0,300;1,200&family=Rubik+Bubbles&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 90rem;
+  z-index: -100;
+  background-size: cover;
+}
+
+body {
+  font-family: "Mali", cursive;
+}
+
+
+
+h2 {
+  font-size: 12rem;
+  margin-top: 40rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.268);
+  color: #fff;
+  width: 100%;
+}
+
+.text {
+  font-size: 3rem;
+  max-width: 110rem;
+  margin: 0 auto;
+  margin-top: 60rem;
+  margin-bottom: 5rem;
+  color: #fff;
+  padding: 5rem 10rem;
+  background: rgba(62, 12, 149, 0.743);
+  border-radius: 10rem;
+}
+
+p {
+  margin-bottom: 3rem;
+  max-width: 90rem;
+}
+
+.delphin-h2 {
+  position: absolute;
+}
+
+.delfin,
+.kamila,
+.koala,
+.kornjaca,
+.labud,
+.lav,
+.lemur,
+.majmun,
+.medved,
+.orao,
+.pingvin,
+.slon,
+.veverica,
+.zebra,
+.zirafa {
+  position: relative;
+}
+
+.delfin:before,
+.kamila:before,
+.koala:before,
+.kornjaca:before,
+.labud:before,
+.lav:before,
+.lemur:before,
+.majmun:before,
+.medved:before,
+.orao:before,
+.zebra:before,
+.pingvin:before,
+.slon:before,
+.veverica:before,
+.zirafa:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e8913d;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.delfin:hover:before,
+.kamila:hover:before,
+.koala:hover:before,
+.kornjaca:hover:before,
+.labud:hover:before,
+.lav:hover:before,
+.lemur:hover:before,
+.majmun:hover:before,
+.medved:hover:before,
+.orao:hover:before,
+.pingvin:hover:before,
+.slon:hover:before,
+.veverica:hover:before,
+.zebra:hover:before,
+.zirafa:hover:before {
+  width: 100%;
+}
+
+.delfin:before {
+  content: "DELFIN";
+}
+
+.kamila:before {
+  content: "KAMILA";
+}
+
+.koala:before {
+  content: "KOALA";
+}
+
+.kornjaca:before {
+  content: "KORNJAČA";
+}
+
+.labud:before {
+  content: "LABUD";
+}
+
+.lav:before {
+  content: "LAV";
+}
+
+.lemur:before {
+  content: "LEMUR";
+}
+
+.majmun:before {
+  content: "MAJMUN";
+}
+
+.medved:before {
+  content: "MEDVED";
+}
+
+.orao:before {
+  content: "ORAO";
+}
+
+.pingvin:before {
+  content: "PINGVIN";
+}
+
+.slon:before {
+  content: "SLON";
+}
+
+.veverica:before {
+  content: "VEVERICA";
+}
+
+.zebra:before {
+  content: "ZEBRA";
+}
+
+.zirafa:before {
+  content: "ŽIRAFA";
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  h2 {
+    margin-top: 60rem;
+  }
+
+  .text {
+    margin-top: 80rem;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  video {
+    display: none;
+  }
+
+  body {
+    background-color: #feb346;
+  }
+
+  h2 {
+    font-size: 7rem;
+    margin-top: 5rem;
+  }
+
+  .kornjaca,
+  .veverica {
+    font-size: 5.5rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-top: 20rem;
+    padding: 5rem;
+    border-radius: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    background: none;
+  }
+
+  .delfin:before,
+  .kamila:before,
+  .koala:before,
+  .kornjaca:before,
+  .labud:before,
+  .lav:before,
+  .lemur:before,
+  .majmun:before,
+  .medved:before,
+  .orao:before,
+  .zebra:before,
+  .pingvin:before,
+  .slon:before,
+  .veverica:before,
+  .zirafa:before {
+    color: #94b026;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  h2 {
+    font-size: 5.5rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin-top: 20rem;
+    padding: 5rem 3rem;
+  }
+
+  .kornjaca,
+  .veverica {
+    font-size: 4rem;
+  }
+
+}

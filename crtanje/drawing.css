@@ -1,0 +1,187 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+  /* height: 100vh; */
+}
+
+canvas {
+  border: 2px solid steelblue;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.toolbox {
+  background-color: #e8913d;
+  border: 1px solid slateblue;
+  border-radius: 2rem;
+  display: flex;
+  width: 80.3rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20rem;
+}
+#color {
+  border-radius: 50%;
+}
+.toolbox > * {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 2rem; */
+  height: 5rem;
+  width: 5rem;
+  margin: 0.25rem;
+  /* padding: 0.25rem; */
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #3f40cc;
+}
+
+.toolbox > *:last-child {
+  margin-left: auto;
+}
+
+/* #increase, #decrease{
+  font-size: 3rem;
+  color: #3f40cc;
+} */
+
+#size {
+  font-size: 2rem;
+  color: #e8913d;
+  font-weight: 600;
+}
+
+button img {
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+}
+
+.drawing-img1,
+.drawing-img2,
+.drawing-img3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.drawing-img1 img,
+.drawing-img2 img,
+.drawing-img3 img {
+  max-width: 25rem;
+  height: 18rem;
+}
+
+.drawing-img1 div {
+  margin-top: -97rem;
+}
+
+.drawing-img2 div {
+  margin-top: -67rem;
+}
+
+.drawing-img3 div {
+  margin-top: -37rem;
+}
+
+#decrease img {
+  width: 11rem;
+  height: 11rem;
+  padding-top: 3.2px;
+  padding-left: 2.5px;
+}
+
+.clear {
+  display: none;
+}
+
+#clear img,
+#increase img {
+  width: 23rem;
+  height: 23rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#clear img {
+  width: 24rem;
+  height: 24rem;
+  padding-right: 4px;
+  padding-top: 5px;
+}
+
+/******
+MEDIA
+******/
+
+@media screen and (max-width: 1140px) {
+  .drawing-img1,
+  .drawing-img2,
+  .drawing-img3 {
+    display: none;
+  }
+
+  #second-section {
+    flex-direction: column;
+  }
+
+  .panda-section,
+  .games-section,
+  .quiz-section {
+    border-right: none;
+    margin-bottom: 5rem;
+  }
+
+  #canvas,
+  .toolbox {
+    width: 100%;
+  }
+
+  #clear {
+    display: none;
+  }
+
+  .clear {
+    display: flex;
+  }
+
+  .clear img {
+    width: 6rem;
+  }
+
+  #second-section {
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+  #second-section p {
+    margin-bottom: 3rem;
+  }
+
+  .footer-h,
+  .footer-li,
+  .fab-container {
+    margin-bottom: 8rem;
+  }
+
+  .copy {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .copy {
+    margin-top: 25rem;
+  }
+}

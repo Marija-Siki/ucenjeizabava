@@ -1,0 +1,126 @@
+.games-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10rem 0;
+}
+
+.games-list ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  list-style: none;
+  height: 75rem;
+
+}
+
+.games-list a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 0 7px #fff;
+ 
+}
+
+.games-list li {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 4rem;
+  font-size: 2.3rem;
+  padding-top: 5rem;
+  background-color: #131313;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 1rem #a1a1b0, 0 0 1rem #a1a1b0, 0 0 2rem #a1a1b0;
+
+}
+
+.games-list li:first-of-type,
+.games-list li:last-of-type {
+  padding-top: 6.5rem;
+}
+
+.games-list li:hover {
+  background-color: #a1a1bc;
+  transition: 0.3s;
+  transform: translateY(-1rem);
+}
+
+.games-pics {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.games-pics img{
+  max-width: 35rem;
+  height: 35rem;
+}
+/* 
+.games-pics div:first-of-type { 
+  margin-top: -80rem;
+} */
+
+.cube1 {
+  margin-top: -85rem;
+  margin-left: 5rem;
+
+}
+
+
+.cube2 {
+  margin-top: -40rem;
+  margin-right: 15rem;
+
+  
+}
+
+.cube3 {
+  margin-top: -53rem;
+}
+
+.cube4 {
+  margin-top: -83rem;
+}
+
+.cube2 img {
+  max-width: 17rem;
+  height: 17rem;
+}
+
+.games-listmob {
+  display: none;
+}
+
+@media screen and (max-width: 900px) { 
+
+  .games-pics img{
+    max-width: 25rem;
+    height: 25rem;
+  }
+
+  .cube2 img {
+    max-width: 8rem;
+    height: 8rem;
+  }
+
+  .games-list {
+    display: none;
+    margin-top: 2rem;
+  }
+
+  .games-listmob {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .cube1,
+  .cube2,
+  .cube3,
+  .cube4 {
+    display: none;
+  }
+
+  
+}

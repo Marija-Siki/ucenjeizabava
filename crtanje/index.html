@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../crtanje/drawing.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:ital@0;1&family=Kanit:ital,wght@0,200;0,300;1,200;1,300&family=Mali:wght@400;700&family=Prompt:ital,wght@0,200;0,300;1,200&family=Rubik+Bubbles&family=Sono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <title>Crtanje</title>
+</head>
+
+<body>
+  <div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+  </div>
+  <header>
+    <div class="nav-flex">
+      <div>
+        <a href="../index.html"><img class="logo" src="../img/Logoo.png" alt="logo"></a>
+      </div>
+      <div>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link link" href="../index.html">Početna</a></li>
+            <li><a class="main-nav-link link" href="../zivotinje/index.html">Životinje</a></li>
+            <li><a class="main-nav-link link" href="../igre/index.html">Igre</a></li>
+            <li id="kviz"><a target="_blank" class="main-nav-link link" href="../kviz/index.html">Kviz</a></li>
+            <li id="kvizmob"><a class="main-nav-link link" href="../kviz/index.html">Kviz</a></li>
+            <li><a class="main-nav-link link active" href="#">Crtanje</a></li>
+          </ul>
+      </div>
+      <div>
+        <span><a class="prijavi-se" href="#second-section">Saznaj više</a></span>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <canvas id="canvas" width="800" height="700"></canvas>
+    <div class="toolbox">
+      <button id="decrease"><img src="../img/minus.png" alt=""></button>
+      <span id="size">2</span>
+      <button id="increase"><img src="../img/plus.png" alt=""></button>
+      <input type="color" id="color">
+      <button id="clearr" class="clear"><img src="../img/clear.png" alt=""></button>
+      <button id="clear"><img src="../img/x.png" alt=""></button>
+    </div>
+    <section class="drawing-img1">
+      <div>
+        <img src="../img/Logopit_1668642876230.png" alt="cvet">
+      </div>
+      <div>
+        <img src="../img/Logopit_1668642876230.png" alt="cvet">
+      </div>
+    </section>
+    <section class="drawing-img2">
+      <div>
+        <img src="../img/Logopit_1668642876230.png" alt="cvet">
+      </div>
+      <div>
+        <img src="../img/Logopit_1668642876230.png" alt="cvet">
+      </div>
+    </section>
+    <section class="drawing-img3">
+      <div>
+        <img src="../img/Logopit_1668642876230.png" alt="cvet">
+      </div>
+      <div>
+        <img src="../img/Logopit_1668642876230.png" alt="cvet">
+      </div>
+    </section>
+    <section id="second-section">
+      <div class="panda-section">
+        <img src="../img/panda.png" alt="panda">
+        <p>Saznaj nešto novo o tvojim omiljenim životinjama. Koja životinja je najviša, a koja najveća. Koja
+          životinja jede samo list eukaliptusa, a koja ne podnosi miris bibera. I još puno toga.</p>
+      </div>
+      <div class="games-section">
+        <img src="../img/gamesss.png" alt="logo-igre">
+        <p>Zabavi se uz neke od omiljenih igara. Igraj X-O sa drugarima ili pobedi kompjuter u nekoj od njih. A tu je i
+          tabla za crtanje gde možeš izraziti svoju kreativnost.</p>
+      </div>
+      <div class="quiz-section">
+        <img src="../img/quiz.png" alt="logo-kviz">
+        <p>Pročitaj i nauči nešto novo o nekim zanimljivim životinjama, a onda to znanje proveri u mini kvizu koji smo
+          pripremili za
+          tebe. Na kraju kviza ćeš videti rezultat tačnih odgovora.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer">
+      <div class="footer-h">
+        <h2>Učenje</h2>
+        <h3>zabava</h3>
+        <h4>Sve na jednom mestu</h4>
+      </div>
+      <div class="footer-li">
+        <ul>
+          <li><a href="../index.html">Početna</a></li>
+          <li><a href="../zivotinje/index.html">Životinje</a></li>
+          <li><a href="../igre/index.html">Igre</a></li>
+          <li><a target="_blank" href="../kviz/index.html">Kviz</a></li>
+          <li><a href="#">Crtanje</a></li>
+        </ul>
+      </div>
+      <div class="fab-container">
+        <div>
+          <h6>Podeli prijateljima</h6>
+        </div>
+        <div class="container">
+          <a target="_blank" class="icon" href="https://www.facebook.com/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a target="_blank" class="icon" href="https://twitter.com/">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" class="icon" href="https://mail.google.com/">
+            <i class="fab fa-google"></i>
+          </a>
+          <a target="_blank" class="icon" href="https://www.instagram.com/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="copy"><span>&copy; 2023. Učenje i zabava</span></div>
+  </footer>
+  <script src="../crtanje/script.js"></script>
+  <script src="../script.js"></script>
+</body>
+
+</html>
